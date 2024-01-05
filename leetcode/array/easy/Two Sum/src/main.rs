@@ -1,7 +1,7 @@
+// Two Sum
+
 // Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
-
 // You may assume that each input would have exactly one solution, and you may not use the same element twice.
-
 // You can return the answer in any order.
 
 // Example 1:
@@ -25,6 +25,29 @@
 
 // Link: https://leetcode.com/problems/two-sum/
 
+use std::collections::HashMap;
+
+struct Solution;
+
 impl Solution {
-    pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {}
+    pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
+        let mut num_indx = HashMap::new();
+
+        for (index, &num) in nums.iter().enumerate() {
+            let complement = target - num;
+            if let Some(&prev_index) = num_indx.get(&complement) {
+                return vec![prev_index as i32, index as i32];
+            }
+            num_indx.insert(num, index);
+        }
+
+        vec![]
+    }
+}
+
+fn main() {
+    let n = vec![3, 2, 4];
+    let tgt = 6;
+    let result = Solution::two_sum(n, tgt);
+    println!("{:?}", result);
 }
