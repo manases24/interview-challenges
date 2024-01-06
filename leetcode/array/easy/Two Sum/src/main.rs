@@ -45,9 +45,15 @@ impl Solution {
     }
 }
 
-fn main() {
-    let n = vec![3, 2, 4];
-    let tgt = 6;
-    let result = Solution::two_sum(n, tgt);
-    println!("{:?}", result);
+#[cfg(test)]
+mod tests {
+    use super::Solution;
+
+    #[test]
+    fn test_two_sum() {
+        let nums = vec![3, 2, 4];
+        let target = 6;
+        let result = Solution::two_sum(nums, target);
+        assert_eq!(result, vec![1, 2]);
+    }
 }
