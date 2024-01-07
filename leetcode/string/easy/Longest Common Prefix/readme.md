@@ -1,3 +1,5 @@
+[Solutions](https://leetcode.com/problems/longest-common-prefix/solutions/3244957/idiomatic-and-elegant-rust-solution/)
+
 ### Code 
 
 ```rust
