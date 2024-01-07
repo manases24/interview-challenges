@@ -30,7 +30,7 @@ impl Solution {
     }
 }
 
-// Módulo de pruebas
+
 #[cfg(test)]
 mod tests {
     use super::*;
