@@ -6,7 +6,7 @@
 fn is_pangram(s: &str) -> bool {
     let alphabet = "abcdefghijklmnopqrstuvwxyz";
     for v in alphabet.chars() {
-        let p = v.to_lowercase().next().unwrap()
+        let p = v.to_lowercase().next().unwrap();
         if !s.to_lowercase().contains(p) {
             return false;
         }
