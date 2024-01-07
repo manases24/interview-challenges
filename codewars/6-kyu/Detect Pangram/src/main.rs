@@ -5,8 +5,9 @@
 // Link: https://www.codewars.com/kata/545cedaa9943f7fe7b000048/train/rust
 fn is_pangram(s: &str) -> bool {
     let alphabet = "abcdefghijklmnopqrstuvwxyz";
-    for p in alphabet.chars() {
-        if !s.to_lowercase().contains(p.to_lowercase().next().unwrap()) {
+    for v in alphabet.chars() {
+        let p = v.to_lowercase().next().unwrap()
+        if !s.to_lowercase().contains(p) {
             return false;
         }
     }
