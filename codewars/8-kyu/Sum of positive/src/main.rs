@@ -9,7 +9,7 @@
 fn positive_sum(slice: &[i32]) -> i32 {
     let mut sum = 0;
     for n in slice.iter() {
-        if v > &0 {
+        if n > &0 {
             sum += n;
         }
     }
