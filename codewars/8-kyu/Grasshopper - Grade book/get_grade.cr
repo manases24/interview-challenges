@@ -25,5 +25,3 @@ def get_grade(a, b, c)
     'F'
   end
 end
-
-puts get_grade(95, 90, 93) # A
