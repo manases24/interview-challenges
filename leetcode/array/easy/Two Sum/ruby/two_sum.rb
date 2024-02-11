@@ -25,15 +25,17 @@
 
 # Link: https://leetcode.com/problems/two-sum/
 def two_sum(nums, target)
-  n = Hash(Int32, Int32).new
+  num_map = {}
+
   nums.each_with_index do |num, index|
-    c = target - num
-    if n.has_key?(c)
-      return [n[c], index]
+    complement = target - num
+    if num_map.key?(complement)
+      return [num_map[complement], index]
     end
-    n[num]=index
+    num_map[num] = index
   end
-  return [] of Int32
+
+  return []
 end
 
 
