@@ -19,15 +19,30 @@
 // Output: [0,1]
 
 export function twoSum(nums: number[], target: number): number[] {
+  const hasHMap = new Map();
   for (let i = 0; i < nums.length; i++) {
-    for (let j = 0; j < nums.length; j++) {
-      if (nums[i] + nums[j] === target) {
-        return [i, j];
-      }
+    const complement = target - nums[i];
+    if (hasHMap.has(complement)) {
+      return [hasHMap.get(complement), i];
     }
+    hasHMap.set(nums[i], i);
   }
-  return [1, 2];
+  return [];
 }
 
-console.log(twoSum([2, 7, 11, 15], 9));
-console.log(twoSum([3, 2, 4], 6));
+// export function twoSum1(nums: number[], target: number): number[] {
+//   const num_to_index: { [key: number]: number } = {};
+
+//   for (let index = 0; index < nums.length; index++) {
+//     const complement = target - nums[index];
+
+//     // Verifica si el complemento existe en el HashMap
+//     if (complement in num_to_index) {
+//       return [num_to_index[complement], index];
+//     }
+
+//     num_to_index[nums[index]] = index;
+//   }
+
+//   return [];
+// }
