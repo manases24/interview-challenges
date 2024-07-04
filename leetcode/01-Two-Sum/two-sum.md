@@ -1,5 +1,9 @@
 # Problema "Two Sum" de LeetCode
 
+El nucleo del problema de "Two Sum" se trata de encontrar el complemento de cada número en el array para alcanzar el objetivo (target)
+
+El complemento se refiere al número que, junto con el número actual del array, suma el valor objetivo (target).
+
 #### Descripción:
 
 Dado un array de números enteros `nums` y un entero `target`, debes encontrar los dos números en el array que sumen el valor `target`. Debes devolver los índices de estos dos números. Puedes asumir que cada entrada tendrá exactamente una solución, y no puedes usar el mismo elemento dos veces.
