@@ -1,4 +1,6 @@
-# Node con TypeScript - TS-Node-dev (preferido)
+# technical-interviews
+
+## Node con TypeScript - TS-Node-dev (preferido)
 
 1. Instalar TypeScript y demás dependencias
 
@@ -20,7 +22,7 @@ npx tsc --init --outDir dist/ --rootDir src
   "start": "npm run build && node dist/app.js"
 ```
 
-# Pasos para configurar Jest con TypeScript, en Node
+## Pasos para configurar Jest con TypeScript, en Node
 
 Documentación [oficial sobre Jest](https://jestjs.io/docs/getting-started)
 
