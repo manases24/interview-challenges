@@ -8,10 +8,4 @@ class Solution:
                 end_i-=1
             else: 
                 return False 
-        return True
-
-
-        
-
-
-  
+        return True   
