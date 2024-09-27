@@ -18,3 +18,15 @@
  * Input: nums = [2, 7, 11, 15], target = 9
  * Output: [0, 1] (porque nums[0] + nums[1] == 9)
  */
+export function twoSum(nums: number[], target: number): number[] {
+  const m: { [key: number]: number } = {};
+
+  for (let index = 0; index < nums.length; index++) {
+    const complement = target - nums[index];
+    if (complement in m) {
+      return [m[complement], index];
+    }
+    m[nums[index]] = index;
+  }
+  return [];
+}
