@@ -19,6 +19,7 @@ export const findOdd = (xs: number[]): number => {
   let map: { [key: number]: number } = {};
   for (let index = 0; index < xs.length; index++) {
     const num = xs[index];
+    // Esto se hace para verificar cuántas veces aparece cada número en el array
     if (map[num]) {
       map[num] += 1;
     } else {
