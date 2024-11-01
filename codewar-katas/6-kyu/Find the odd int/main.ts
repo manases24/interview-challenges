@@ -20,6 +20,7 @@ export const findOdd = (xs: number[]): number => {
   for (let index = 0; index < xs.length; index++) {
     const num = xs[index];
     // Esto se hace para verificar cuántas veces aparece cada número en el array
+    // Ya que solo se debe retornar el numero impar que aparece una sola vez
     if (map[num]) {
       map[num] += 1;
     } else {
