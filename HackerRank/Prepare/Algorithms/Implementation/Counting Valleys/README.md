@@ -1,6 +1,6 @@
 # Contando Valles
 
-Un excursionista entusiasta mantiene un registro meticuloso de sus caminatas. Durante la última caminata, que constó de un número específico de pasos, se anotó si cada paso fue cuesta arriba (subida) o cuesta abajo (bajada). Las caminatas siempre comienzan y terminan a nivel del mar, y cada paso hacia arriba o hacia abajo representa un cambio de una unidad en la altitud.
+Un excursionista entusiasta mantiene un registro meticuloso de sus caminatas. Durante la última caminata, que constó de un número específico de pasos, se anotó si cada paso fue cuesta arriba (U) o cuesta abajo (D). Las caminatas siempre comienzan y terminan a nivel del mar, y cada paso hacia arriba o hacia abajo representa un cambio de una unidad en la altitud.
 
 ### Definiciones
 
