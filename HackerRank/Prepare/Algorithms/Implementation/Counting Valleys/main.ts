@@ -13,7 +13,7 @@ export function countingValleys(steps: number, path: string): number {
   // Voy a recorrer cada paso de la caminata representado por "U" (subida) y "D" (bajada)
   // Si el paso es "U", aumentamos seaLevel en 1
   // Si el paso es "D", disminuimos seaLevel en 1
-  // Luego voy a comparar si seaLevel es menor o igual a 0 y el paso es U
+  // Luego voy a comparar si seaLevel es igual a 0 y el paso es U
   // Si es verdadero voy encontre un valle caso contrario no encontre un valle
   // voy a guardar la cantidad de valles encontrados y retornarlo
   let seaLevel = 0;
