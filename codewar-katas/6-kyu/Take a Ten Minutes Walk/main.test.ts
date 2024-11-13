@@ -29,14 +29,4 @@ describe("Take a Ten Minutes Walk", () => {
     const walk = ["n", "n", "e", "w", "n", "s", "e", "w", "n", "s"];
     expect(isValidWalk(walk)).toBe(false);
   });
-
-  it("should return false for a walk with the wrong direction", () => {
-    const walk = ["n", "n", "n", "s", "s", "s", "w", "w", "e", "e"];
-    expect(isValidWalk(walk)).toBe(false);
-  });
-
-  it("should return false if the walk is not balanced (more 'n' than 's' or 'e' than 'w')", () => {
-    const walk = ["n", "n", "s", "s", "s", "w", "w", "e", "e", "n"];
-    expect(isValidWalk(walk)).toBe(false);
-  });
 });
