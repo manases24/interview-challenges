@@ -18,7 +18,18 @@ export function validBraces(braces: string): boolean {
   return true;
 }
 
-// Debo escribir una función que reciba por parametro un string
-// El string puede contener corchetes, llaves y/o parentesis
-// Debo verificar que el string reciba las llaves {}
-// Si recibe {} retorno verdadero pero si recibe { solamente o } solamente retorno falso
+// Debo escribir una función que reciba por parámetro un string.
+// El string puede contener los caracteres: (), [], {}.
+// El objetivo es determinar si el string es válido según estas reglas:
+// 1. Cada apertura ( { [ debe tener un cierre correspondiente ) } ].
+// 2. Los tipos de apertura y cierre deben coincidir.
+//    Por ejemplo: { } es válido, pero { ] no lo es.
+// 3. La cadena debe estar balanceada, lo que significa que:
+//    - Cada apertura debe tener su cierre correspondiente en el orden correcto.
+//    - No puede haber un cierre sin su apertura previa.
+//    - Ejemplo válido: `{[()()]}`.
+//    - Ejemplo inválido: `{[(])}`.
+// 4. El orden debe ser correcto: los paréntesis, corchetes y llaves deben estar correctamente anidados.
+//    Ejemplo válido: `{[()]}` (el cierre del paréntesis ocurre antes del cierre del corchete).
+//    Ejemplo inválido: `([)]` (el cierre del paréntesis ocurre después del cierre del corchete).
+// La función debe devolver `true` si el string es válido y `false` si no lo es.
